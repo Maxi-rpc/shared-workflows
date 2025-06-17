@@ -33,6 +33,6 @@ on:
 
 jobs:
   run-codeql:
-    uses: Maxi-rpc/shared-workflows/.github/workflows/codeql.yml@main
+    uses: your-account/shared-workflows/.github/workflows/codeql.yml@main
     with:
       languages: 'javascript' # add multulanguages javascript,python

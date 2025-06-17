@@ -29,7 +29,7 @@ on:
 
 jobs:
   codium-agent:
-    uses: Maxi-rpc/shared-workflows/.github/workflows/codium-pr-agent.yml@main
+    uses: your-account/shared-workflows/.github/workflows/codium-pr-agent.yml@main
     secrets:
       OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
