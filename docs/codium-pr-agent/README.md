@@ -27,9 +27,13 @@ on:
     types: [opened, reopened, ready_for_review, review_requested]
   issue_comment:
 
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+  
 jobs:
   codium-agent:
     uses: your-account/shared-workflows/.github/workflows/codium-pr-agent.yml@main
-    secrets:
-      OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    secrets: inherit
+
